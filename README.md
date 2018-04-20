@@ -12,11 +12,10 @@ For mypy: see http://mypy.readthedocs.io/en/latest/index.html
 
 Add this to your `.pre-commit-config.yaml`:
 
-    -   repo: git://github.com/d1ff/pre-commit-mypy
+    -   repo: git://github.com/apisarek/pre-commit-mypy
         sha: ''  # Use the sha / tag you want to point at
         hooks:
         -   id: mypy
 
-By default it uses ```--check-untyped-defs``` option with
-```--silent-imports```. You may override it with ```args``` property of the
+You may override options with ```args``` property of the
 hook in your config.
